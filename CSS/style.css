@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    16% { left: 0%; }
+    20% { left: -100%; }
+    36% { left: -100%; }
+    40% { left: -200%; }
+    56% { left: -200%; }
+    60% { left: -300%; }
+    76% { left: -300%; }
+    80% { left: -400%; }
+    96% { left: -400%; }
+    }
+
+@keyframes color-change {
+    0% { color: black; }
+    16% { color: black; }
+    20%{ color: #fff; }
+    36%{ color: #FFF; }
+    40%{ color: #FFF; }
+    56% { color: #FFF; }
+    60% { color: black; }
+    76%{ color: black; }
+    80%{ color: #FFF; }
+    96%{ color: #FFF; }
+    100%{ color: black; }
+    }
+    
+#slider {  overflow: hidden; }
+
+#slider figure img { 
+    height: 100vh;
+    width: 20%; 
+    float: left;
+    object-fit: cover; 
+    }
+
+#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 60s slidy infinite; 
+    }
+    
+
+header {
+    font-family: 'Gideon Roman', cursive;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+
+nav {
+    position: absolute;
+    top: 20px;
+}
+
+nav ul {    
+    list-style-type: none;
+    display: flex;   
+    align-items: center;
+    gap: 100px;
+    }
+
+nav a {
+    font-size: 2em;
+    text-decoration: none;
+    animation: color-change 60s infinite;
+    }
+
+.navtext:hover {
+    border-bottom: 1px;
+    
+}
+
+nav img {
+    width: 125px;
+    height: auto;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#propos {
+    height: 5000px;
+    
+}
+
+#portefolio {
+    height: 5000px;
+    margin-top: 50px;
+}
+
+#decouvrez {
+    font-family: 'Comforter', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 3.5em;    
+}
+
+.galerie {
+    margin-top: 60px;
+}
+
+#p1{
+    display: flex;
+}
+
+#p2{
+    display: flex;
+    justify-content:center ;
+}
+
+.boxgalerie {
+    margin-top: 25px;
+    display: flex;    
+}
+
+.boxgalerie img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#epave {
+    width: 40%;
+    height: 35em;
+    margin-right: 25px;
+    background-color: aquamarine;
+}
+
+#papillon {
+    width: 17%;
+    height: 35em;
+}
+
+#bateau {
+    width: 100%;
+    height: 50em;
+}
+
+#oiseau {
+    margin-right: 25px;
+    width:25%;
+    height: 20em;
+}
+
+#ancre {
+    width: 20%;
+    height: 20em;
+}
+
+.legende {
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+}
