@@ -7,43 +7,40 @@
     <title>Loïc Lamandé photographe professionel</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Caveat:wght@400;500;600;700&family=Comforter&family=Gideon+Roman&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/904b8dc903.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="test">
     <header>
         
         <div id="slider">
             <figure>
-                <img src="images/caroussel/Sentier des épaves sélection1.jpg" alt>
-                <img src="images/caroussel/Sentier des épaves sélection13.jpg" alt>
+                <img src="images/caroussel/caroussel1.jpg" alt>                
                 <img src="images/Papillons/Papillons1721.jpg" alt>
-                <img src="images/caroussel/Sentier des épaves sélection41.jpg" alt>
+                <img src="images/Redon/Murs Redon 7.jpg" alt>
+                <img src="images/caroussel/caroussel2.jpg" alt>
                 <img src="images/Papillons/Papillons 1727.jpg" alt> 
             </figure>
-
         </div>
 
-        <nav>
+        <nav id="navbar">
+            <a href="#"><img id="imgnav" src="images/logo/Logol.png" alt></a>   
             <ul>
                 <li id="portefolionav">
-                    <a href="#portefolio"><span class="navtext">Porte-Folio</span></a>
-                </li>
-                <li id="infonav">
-                    <a href="#"><span class="navtext">Info</span></a>
-                </li>
-                <li id="logonav">
-                    <a href="#"><img src="images/logo.png" alt></a>   
+                    <a href="#portefolio"><span class="navtext">PORTE-FOLIO</span></a>
                 </li>
                 <li id="proposnav">
-                    <a href="#"><span class="navtext">À propos</span></a>
+                    <a href="#"><span class="navtext">À PROPOS</span></a>
+                </li>
+                <li id="infonav">
+                    <a href="#"><span class="navtext">INFO</span></a>
                 </li>
                 <li id="contactnav">
-                    <a href=""><span class="navtext">Contact</span></a>
+                    <a href=""><span class="navtext">CONTACT</span></a>
                 </li>
             </ul>
         </nav>
@@ -54,31 +51,58 @@
     
 
     <section id="portefolio">
-        <p id="decouvrez">
-        <span> Découvrez mon travail</span>
-        <i class="fa-solid fa-angle-down"></i>
+        <p>
         </p>
         <div class="galerie">
             <div id="p1">
-                <a href="#" class="boxgalerie" id="epave" >                  
-                    <img src="images/Photo épaves/Sentier des épaves sélection63.jpg" alt>
-                    <span class="legende">Sentier des épaves</span>
+                <a href="#" class="boxgalerie" id="mur" >                  
+                    <img src="images/Redon/Murs Redon 3.jpg" alt>
+                    <span class="legende">MURS DE REDON</span>
                 </a>
-                <a href="#" class="boxgalerie" id="papillon"><img src="images/Papillons/Le papillon citron7.jpg" alt></a>    
+                <a href="#" class="boxgalerie" id="papillon">
+                    <img src="images/Papillons/Le papillon citron7.jpg" alt>
+                    <span class="legende">PAPILLONS</span>
+                </a>    
             </div>
-            <a href="#" class="boxgalerie" id="bateau"><img src="images/bateau.jpg" alt></a>
+            <a href="#" class="boxgalerie" id="bateau">
+                <img src="images/bateau.jpg" alt>
+                <span class="legende">SENTIER DES ÉPAVES</span>
+            </a>
             <div id="p2">
-                <a href="#" class="boxgalerie" id="oiseau"><img src="images/Oiseauxjpg.jpg" alt></a>  
-                <a href="#" class="boxgalerie" id="ancre"><img src="images/ancre.jpg" alt></a>
+                <a href="#" class="boxgalerie" id="oiseau">
+                    <img src="images/Oiseauxjpg.jpg" alt>
+                    <span class="legende">OISEAUX</span>
+                </a>  
+                <a href="#" class="boxgalerie" id="ancre">
+                    <img src="images/ancre.jpg" alt>
+                    <span class="legende">ANCRE</span>
+                </a>
             </div>    
         </div>
    
     </section>
 
-    <section id="propos">
-        <h1></h1>
+    <section class="propos">
+        <div class="imagepropos" >
+            <img src="images/Redon/Murs Redon 4.jpg" alt>
+        </div>
+
+        <aside>
+            <h2>Qui suis-je ?</h2>
+            <p>Bonjour je m'appel Loïc Lamandé , je suis photographe professionel depuis plus de 40 ans , je partage mon travail sur ce site et propose divers services</p>
+            <div class="a1"> <a href="#">En savoir plus sur moi</a></div>
+        </aside>
         
    
     </section>
-</div>
+
+    <footer>
+        <div class="f1">
+            <p class="rights">©2022 Loïc Lamandé Photographie | All Rights Reserved</p>
+            <a href="#slider">Retour en haut <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <p class="power">Powered by FlipFlop</p>
+        
+    </footer>
 </body>
+
