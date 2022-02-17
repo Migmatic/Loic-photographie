@@ -129,9 +129,9 @@ nav img {
 }
 
 .boxgalerie {
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
-    overflow: hidden;
+    
 }
 
 
@@ -144,10 +144,16 @@ nav img {
     
 }
 
+.boxImg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 #mur {
     width: 40%;
     height: 35em;
-    margin-right: 30px;
+    margin-right: 50px;
     position: relative;
 }
 
@@ -164,7 +170,7 @@ nav img {
 }
 
 #turkeye {
-    margin-right: 30px;
+    margin-right: 50px;
     width:30%;
     height: 400px;
     position: relative;
@@ -179,7 +185,7 @@ nav img {
 .legende {
     overflow: visible;
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     color: grey;
     background-color: rgb(219, 230, 240);
     width: 120px;
@@ -204,17 +210,20 @@ nav img {
 }
 
 #papillon span {
-    right: 0;
+    right: -20px;
 }
 
 #pyrenees span {
-    right: 0;
+    right: -20px;
 }
 
 #epave span {
-    right: 0;
+    right: 0px;
 }
 
+#turkeye span{
+    left: -20px;
+}
 
 /* A PROPOS */
 
