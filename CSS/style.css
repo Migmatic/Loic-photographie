@@ -132,7 +132,6 @@ nav img {
     margin-top: 30px;
     display: flex;
     overflow: hidden;
-    
 }
 
 .boxgalerie img{
@@ -140,6 +139,7 @@ nav img {
     height: auto;
     object-fit: cover;
     transition: all 2s ease;
+    
 }
 
 
@@ -157,22 +157,22 @@ nav img {
     position: relative;
 }
 
-#bateau {
+#epave {
     width: 100%;
     height: 50em;
     position: relative;
 }
 
-#oiseau {
+#turkeye {
     margin-right: 30px;
-    width:25%;
-    height: 20em;
+    width:30%;
+    height: 400px;
     position: relative;
 }
 
 #pyrenees {
-    width: 20%;
-    height: 20em;
+    width: 25%;
+    height: 400px;
     position: relative;
 }
 
@@ -207,9 +207,14 @@ nav img {
     right: 0;
 }
 
-#ancre span {
+#pyrenees span {
     right: 0;
 }
+
+#epave span {
+    right: 0;
+}
+
 
 /* A PROPOS */
 
@@ -272,10 +277,12 @@ aside a {
     display: flex;
     align-items: center;
     text-align: center;
+    transition: all 2s ease;
 }
 
 aside a:hover {
-    font-weight: bold;
+    background-color: rgb(172, 188, 202);
+    color: #FFF;
 } 
 
 .a1 {
