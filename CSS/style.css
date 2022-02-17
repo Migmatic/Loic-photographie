@@ -50,7 +50,7 @@ body {
 }
 
 .next img, .prev img{
-    width: 400px;
+    width: 300px;
     height: auto;
 }
 
@@ -117,6 +117,8 @@ nav img {
 
 .galerie {
     margin-top: 60px;
+    margin-right: 4%;
+    margin-left: 4%;
 }
 
 #p1{
@@ -129,9 +131,9 @@ nav img {
 }
 
 .boxgalerie {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
-    
+    overflow: hidden;
 }
 
 
@@ -144,22 +146,24 @@ nav img {
     
 }
 
-.boxImg {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
 #mur {
-    width: 40%;
-    height: 35em;
-    margin-right: 50px;
+    width: 35%;
+    height: 600px;    
     position: relative;
+    margin-right: 2%;
 }
 
 #papillon {
-    width: 17%;
-    height: 35em;
+    width: 20%;
+    height: 600px;
+    position: relative;
+    margin-right: 2%;
+}
+
+#turkeye {
+    
+    width:41%;
+    height: 600px;
     position: relative;
 }
 
@@ -169,12 +173,7 @@ nav img {
     position: relative;
 }
 
-#turkeye {
-    margin-right: 50px;
-    width:30%;
-    height: 400px;
-    position: relative;
-}
+
 
 #pyrenees {
     width: 25%;
@@ -182,16 +181,22 @@ nav img {
     position: relative;
 }
 
+#peche { 
+    width:30%;
+    height: 400px;
+    position: relative;
+    margin-right: 2%;
+}
+
 .legende {
-    overflow: visible;
     position: absolute;
-    bottom: -20px;
-    color: grey;
-    background-color: rgb(219, 230, 240);
-    width: 120px;
-    height: 120px;
+    color: #FFF;
+    width: 100%;
+    height: 10%;
+    top: 45%;
+    text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: 40px;
     font-weight: 500;
     display: flex;
     flex-direction: column;
@@ -205,25 +210,10 @@ nav img {
  }
 
 .legende:hover,.boxgalerie img:hover ~ .legende {
-    background-color: rgb(172, 188, 202);
-    color: #FFF;
+    opacity: 0;
 }
 
-#papillon span {
-    right: -20px;
-}
 
-#pyrenees span {
-    right: -20px;
-}
-
-#epave span {
-    right: 0px;
-}
-
-#turkeye span{
-    left: -20px;
-}
 
 /* A PROPOS */
 
