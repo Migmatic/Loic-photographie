@@ -20,9 +20,6 @@ function showSlides(n) {
 }
 
 
-
-
-
 window.onscroll = function () {
     if(document.documentElement.scrollTop > 500){
         document.getElementById("navbar").style.marginTop = "10px";

@@ -20,7 +20,7 @@ body {
 
     }
     
-#slider img { 
+.custom-slider img { 
     height: 100vh;
     width: 100%; 
     float: left;
@@ -31,7 +31,7 @@ body {
 .prev, .next {
     cursor: pointer;
     position: absolute;        
-    top: 90%;
+    top: 92%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,6 +47,11 @@ body {
 
 .next:hover {
     right: 80px;
+}
+
+.next img, .prev img{
+    width: 400px;
+    height: auto;
 }
 
 
@@ -137,10 +142,6 @@ nav img {
     transition: all 2s ease;
 }
 
-.boxgalerie img:hover{
-   transform: scale(1.05);
-   
-}
 
 
 #mur {
@@ -169,15 +170,16 @@ nav img {
     position: relative;
 }
 
-#ancre {
+#pyrenees {
     width: 20%;
     height: 20em;
     position: relative;
 }
 
 .legende {
+    overflow: visible;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     color: grey;
     background-color: rgb(219, 230, 240);
     width: 120px;
@@ -189,6 +191,16 @@ nav img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    transition: all 2s ease;
+}
+
+.boxgalerie img:hover ,.legende:hover ~ .boxgalerie img{
+    transform: scale(1.05);   
+ }
+
+.legende:hover,.boxgalerie img:hover ~ .legende {
+    background-color: rgb(172, 188, 202);
+    color: #FFF;
 }
 
 #papillon span {
@@ -206,7 +218,6 @@ nav img {
     margin-top: 100px;
     height: 1050px;
     background-color:  rgb(185, 214, 205);
-
 }
 
 .imagepropos {
@@ -270,13 +281,11 @@ aside a:hover {
 .a1 {
     display: flex;
     justify-content: end;
-
 }
 
 footer {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.1em;
-    
+    font-size: 1.1em;    
 }
 
 .f1 {
